@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 from Waypoint import Waypoint
 from geopoint import GeoPoint
+from georect import GeoRect
 
 
 class WaypointList:
@@ -33,6 +34,7 @@ class WaypointList:
     def get_bounds(self, offset_distance=15.0):
         rc = GeoRect(180, -180, -90, 90)
         for wp in self.__list:
+            print(f'waypoint = {wp}')
             rc.left = min(rc.left, wp.lon)
             rc.right = max(rc.right, wp.lon)
             rc.top = max(rc.top, wp.lat)

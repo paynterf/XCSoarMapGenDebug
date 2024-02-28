@@ -55,3 +55,6 @@ Admonterhaus, 47.63195, 14.491383333333333, 1712, None
 frank@M6700:~/MapGenDebug$ ^C
 
 This shows that the 'parse_seeyou_waypoints(Waypoint_Strings)' function from the MapGen repo properly parses waypoint strings from a Condor2 waypoint file, so its probably not the culprit here.
+
+27 Feb 2024: Added XCSoarMapServerDebug.py - when run this emulates most server operations using 'WaypointFile.cup' as input
+
